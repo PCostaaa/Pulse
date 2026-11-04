@@ -1,0 +1,23 @@
+.bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 16px;
+  list-style: none;
+  background: var(--surface);
+  border-radius: 8px;
+}
+
+.bar-list__row {
+  display: grid;
+  grid-template-columns: 80px 1fr 56px;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+}
+
+.bar-list__label { color: var(--text-muted); }
+.bar-list__track { height: 6px; background: var(--stroke); border-radius: 999px; overflow: hidden; }
+.bar-list__fill { height: 100%; background: var(--indigo); border-radius: 999px; }
+.bar-list__value { font-family: var(--font-mono); text-align: right; }

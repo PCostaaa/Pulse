@@ -1,0 +1,111 @@
+:root {
+  color-scheme: light;
+
+  /* Base */
+  --sidebar: #0f1117;
+  --surface-dark: #1a1d27;
+  --surface: #f8f9fb;
+  --card: #ffffff;
+  --stroke: #e5e7eb;
+  --chip: #f3f4f6;
+
+  /* Texto */
+  --text: #111827;
+  --text-muted: #6b7280;
+  --text-subtle: #9ca3af;
+
+  /* Marca */
+  --indigo: #6366f1;
+  --indigo-light: #eef2ff;
+  --emerald: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+
+  /* Estados (badges) */
+  --success-bg: #d1fae5;
+  --success-text: #047857;
+  --warning-bg: #fef3c7;
+  --warning-text: #b45309;
+  --danger-bg: #fee2e2;
+  --danger-text: #b91c1c;
+
+  /* Tipografia */
+  --font-sans: "Albert Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --surface: #0b0d12;
+  --card: #151821;
+  --stroke: #262a36;
+  --chip: #1f2330;
+
+  --text: #f3f4f6;
+  --text-muted: #9ca3af;
+  --text-subtle: #6b7280;
+
+  --indigo-light: rgba(99, 102, 241, 0.12);
+
+  --success-bg: transparent;
+  --success-text: #34d399;
+  --warning-bg: transparent;
+  --warning-text: #fbbf24;
+  --danger-bg: transparent;
+  --danger-text: #f87171;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--surface);
+}
+
+/* Botões */
+.btn {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn--outline { background: var(--card); border-color: var(--stroke); }
+.btn--soft { background: var(--indigo-light); color: var(--indigo); }
+
+.btn--primary { background: var(--indigo); color: #fff; }
+.btn { display: inline-flex; align-items: center; gap: 6px; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn--light { background: #fff; color: var(--indigo); }
+.btn--small { padding: 6px 12px; font-size: 12px; }
+.icon-btn {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--stroke);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.icon-btn:hover { color: var(--indigo); border-color: var(--indigo); }
+.btn--danger { background: var(--error); color: #fff; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

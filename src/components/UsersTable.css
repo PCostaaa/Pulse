@@ -1,0 +1,3 @@
+.tag--indigo { background: var(--indigo-light); color: var(--indigo); }
+.tag-green { background: var(--success-bg); color: var(--success-text); }
+.tag--amber { background: var(--warning-bg); color: var(--warning-text); }

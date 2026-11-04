@@ -1,0 +1,27 @@
+.segmented { display: flex; gap: 8px; }
+
+.segmented__option {
+  min-width: 64px;
+  padding: 6px 16px;
+  border: 1px solid var(--stroke);
+  border-radius: 8px;
+  background: var(--card);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.segmented__option:hover { border-color: var(--indigo); }
+.segmented__option--active {
+  background: var(--indigo);
+  border-color: var(--indigo);
+  color: #fff;
+}
+
+.segmented--soft { gap: 4px; }
+.segmented--soft .segmented__option { min-width: auto; padding: 6px 12px; }
+.segmented--soft .segmented__option--active {
+  background: var(--indigo-light);
+  border-color: transparent;
+  color: var(--indigo);
+}

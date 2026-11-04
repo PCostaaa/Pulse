@@ -1,0 +1,53 @@
+.chart-box {
+  padding: 8px 0;
+  background: var(--surface);
+  border-radius: 8px;
+}
+
+.chart-tooltip {
+  padding: 6px 12px;
+  background: var(--sidebar);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Donut */
+.traffic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-height: 216px;
+}
+.traffic__donut { position: relative; }
+.traffic__center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.traffic__center strong { font-size: 16px; font-weight: 600; }
+.traffic__center span { font-size: 11px; color: var(--text-muted); }
+
+.traffic__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+.traffic__legend li { display: flex; align-items: center; gap: 8px; }
+.traffic__legend strong { margin-left: auto; padding-left: 12px; }
+.traffic__dot { width: 8px; height: 8px; border-radius: 50%; }
+
+.chart-box--tinted {
+  background: linear-gradient(180deg, var(--indigo-light) 0%, var(--surface) 100%);
+}
+
+.traffic { flex-wrap: wrap; }
