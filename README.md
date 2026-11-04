@@ -1,16 +1,40 @@
-# React + Vite
+# Pulse — Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A SaaS analytics dashboard built as a React learning project. Designed in Figma, implemented from scratch with React, Vite and Recharts.
 
-Currently, two official plugins are available:
+**Live demo:** [https://pulse-ten-nu-84.vercel.app/]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- 8 screens: Overview, Analytics, Reports, Report Detail, Audience, Settings, Integrations, Onboarding
+- Settings with 6 sub-sections: Profile, Account, Notifications, Security, Billing, Integrations
+- Dark mode with system preference detection
+- Fully responsive (desktop, tablet, mobile)
+- Data persisted in localStorage
+- Interactive charts with Recharts (area, line, bar, donut)
+- Filterable tables, segmented controls, form validation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+- **React 19** with React Router v7
+- **Vite** for build and dev server
+- **Recharts** for data visualization
+- **Lucide React** for icons
+- **CSS Modules** (plain CSS with custom properties)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Design
+
+Designed in Figma following a custom design system with 10 color tokens, 8 text styles (Albert Sans + JetBrains Mono) and reusable components.
+
+## Getting started
+
+```bash
+git clone https://github.com/PCostaaa/Pulse.git
+cd pulse
+npm install
+npm run dev
+```
+
+## Author
+
+Pedro Costa — [Behance](https://www.behance.net/pedrocosta262) · [LinkedIn](https://www.linkedin.com/in/pedroabcosta/)
