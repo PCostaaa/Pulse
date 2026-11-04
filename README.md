@@ -2,7 +2,7 @@
 
 A SaaS analytics dashboard built as a React learning project. Designed in Figma, implemented from scratch with React, Vite and Recharts.
 
-**Live demo:** [https://pulse-ten-nu-84.vercel.app/]
+**Live demo:** [https://pulse-ten-nu-84.vercel.app/](https://pulse-ten-nu-84.vercel.app/)
 
 ## Features
 
@@ -20,7 +20,7 @@ A SaaS analytics dashboard built as a React learning project. Designed in Figma,
 - **Vite** for build and dev server
 - **Recharts** for data visualization
 - **Lucide React** for icons
-- **CSS Modules** (plain CSS with custom properties)
+- **CSS Modules** with custom properties (light & dark tokens)
 
 ## Design
 
